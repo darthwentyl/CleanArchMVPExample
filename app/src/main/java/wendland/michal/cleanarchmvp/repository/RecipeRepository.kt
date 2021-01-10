@@ -15,7 +15,8 @@ class RecipeRepository {
         this._recipeStorage.add(Recipe("MEAT_3", "MEAT_3 Description", true))
     }
 
-    val getRecipes : MutableList<Recipe>
-        get() = _recipeStorage.getRecipes
+    fun getRecipes(): MutableList<Recipe> {
+        return _recipeStorage.getRecipes()
+    }
 
 }

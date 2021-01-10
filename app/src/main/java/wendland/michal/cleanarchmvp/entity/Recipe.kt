@@ -1,9 +1,9 @@
 package wendland.michal.cleanarchmvp.entity
 
 class Recipe(
-    private val _name: String,
-    private val _description: String,
-    private val _isMeat: Boolean
+    private var _name: String,
+    private var _description: String,
+    private var _isMeat: Boolean
 ) {
     val getTitle
         get() = _name
