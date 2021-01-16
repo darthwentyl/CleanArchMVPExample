@@ -3,7 +3,7 @@ package wendland.michal.cleanarchmvp.storage
 import wendland.michal.cleanarchmvp.entity.Recipe
 
 class RecipeStorage {
-    private lateinit var _recipes : MutableList<Recipe>
+    private var _recipes : MutableList<Recipe> = mutableListOf<Recipe>()
 
     fun getRecipes(): MutableList<Recipe> {
         if(_recipes.isNotEmpty()) {

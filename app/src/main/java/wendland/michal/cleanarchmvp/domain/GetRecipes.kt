@@ -4,7 +4,7 @@ import wendland.michal.cleanarchmvp.entity.Recipe
 import wendland.michal.cleanarchmvp.repository.RecipeRepository
 
 class GetRecipes {
-    private lateinit var _recipeRepository : RecipeRepository
+    private val _recipeRepository : RecipeRepository = RecipeRepository()
 
     fun getReceipes(isWithMeat : Boolean) : MutableList<Recipe> {
         var filteredRecipes = mutableListOf<Recipe>()
